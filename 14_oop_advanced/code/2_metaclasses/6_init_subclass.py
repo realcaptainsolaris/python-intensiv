@@ -30,28 +30,3 @@ werden.
 
 class TradingStrategy:
     pass
-
-
-class MeanReversionStrategy(TradingStrategy):
-    """Korrekte Strategie mit allen Attributen."""
-
-    name = "Mean Reversion"
-    risk_level = "Medium"
-
-    def execute(self, market_data):
-        print("Executing Mean Reversion Strategy...")
-
-
-class MomentumStrategy(TradingStrategy):
-    """Korrekte Strategie mit fehlendem Name."""
-
-    risk_level = "High"
-
-    def execute(self, market_data):
-        print("Executing Momentum Strategy...")
-
-
-class InvalidStrategy(TradingStrategy):
-    """Strategie ohne `risk_level` → Fehler!"""
-
-    name = "Invalid Strategy"
