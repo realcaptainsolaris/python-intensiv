@@ -52,19 +52,12 @@ lst3 = [2, 3, 5, 7, 11, 13, 17]
 lst2 = [1, 3, 5, 7, 9]
 lst1 = [2, 4, 6, 8]
 
-result = list(map(multiply, lst1, lst2, lst3))
-print("multipy:", result)
-
 # Alternative mit zip und List Comprehension
-result = [i * x * u for i, x, u in zip(lst1, lst2, lst3)]
-print("multipy old:", result)
-
 
 # Sinnvolle Anwendung mit map: Summiere zwei Listen elementweise
 # über zip() und die eingebaute Funktion sum()
 a = [1, 2, 1]
 b = [4, 5, -127]
-print("mit map:", list(map(sum, zip(a, b))))  # [5, 7, -126]
 
 
 # Aufgabe: erstelle eine Funktion, die als Parameter eine Liste erwartet und
@@ -76,13 +69,3 @@ monty = ["eggs", "spam whomp", "cheese", "ham"]
 
 # Messung Listen Comprehension vs. map
 # List Comprehension ist unter Umständen etwas langsamer
-n = 10000000
-value = 5
-result = timeit.timeit(
-    "map(lambda x: x**2, range(1, value + 1))", globals=globals(), number=n
-)
-result2 = timeit.timeit(
-    "[x**2 for x in range(1, value + 1)]", globals=globals(), number=n
-)
-print("result:", result)
-print("result2:", result2)

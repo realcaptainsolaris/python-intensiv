@@ -52,34 +52,16 @@ print("Maximale Rekursionstiefe:", sys.getrecursionlimit())
 def fib_naiv(n):
     """Berechnet die n-te Fibonacci-Zahl rekursiv ohne Zwischenspeicherung.
     Sehr ineffizient bei großen n wegen exponentieller Aufrufanzahl."""
-    if n < 2:
-        return n
-    return fib_naiv(n - 1) + fib_naiv(n - 2)
+    pass
 
 
 # ---------------------------------------------
 # Beispiel 2: Fibonacci mit Memoisierung (Top-Down)
 # ---------------------------------------------
-@lru_cache(maxsize=None)
 def fib_memo(n):
     """Rekursive Fibonacci mit Memoisierung über lru_cache.
     Wiederverwendet bereits berechnete Werte."""
-    if n < 2:
-        return n
-    return fib_memo(n - 1) + fib_memo(n - 2)
-
-
-# ---------------------------------------------
-# Beispiel 3: Fibonacci mit dynamischer Programmierung (Bottom-Up)
-# ---------------------------------------------
-def fib_dp(n):
-    """Berechnet Fibonacci-Zahl iterativ mit DP-Tabelle (Bottom-Up)."""
-    if n < 2:
-        return n
-    dp = [0, 1]  # Startwerte für F(0) und F(1)
-    for i in range(2, n + 1):
-        dp.append(dp[-1] + dp[-2])  # F(n) = F(n-1) + F(n-2)
-    return dp[n]
+    pass
 
 
 # ---------------------------------------------
@@ -88,5 +70,3 @@ def fib_dp(n):
 n = 40
 print("Fibonacci naive:", fib_naiv(n))  # Sehr langsam ab n > 35
 print("Fibonacci memo:", fib_memo(n))
-print("Fibonacci DP:", fib_dp(n))
-

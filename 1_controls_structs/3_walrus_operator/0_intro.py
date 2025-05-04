@@ -27,8 +27,7 @@ import re
 # ---------------------------------------------
 # Beispiel 1: klassische while-Schleife mit input()
 # ---------------------------------------------
-while (text := input("Text (leer zum Beenden): ")) != "":
-    print(f"Du hast eingegeben: {text}")
+
 
 # ---------------------------------------------
 # Beispiel 2: Zwischenspeichern im If-Ausdruck
@@ -36,10 +35,12 @@ while (text := input("Text (leer zum Beenden): ")) != "":
 
 
 def pruefe_email(email: str):
-    if match := re.match(r".+@.+\..+", email):
-        print("gültig, Domain:", match.group(0))
-    else:
-        print("ungültig")
+    """Prüfe, ob die E-Mail-Adresse gültig ist.
+
+    Hinweis:
+    Einfache Prüfung auf das Vorhandensein von '@' und '.'.
+    """
+    pass
 
 
 pruefe_email("user@example.com")
@@ -49,8 +50,6 @@ pruefe_email("keine.email")
 # Beispiel 3: List Comprehension mit Bedingungsergebnis
 # ---------------------------------------------
 werte = ["Apfel", "Banane", "Kiwi", ""]
-laengen = [l for w in werte if (l := len(w)) > 0]
-print("Längen gefiltert:", laengen)
 
 # ---------------------------------------------
 # Beispiel 4: mehrfach verwendetes Ergebnis vermeiden
@@ -58,10 +57,8 @@ print("Längen gefiltert:", laengen)
 
 
 def quadrat_und_vergleich(x):
-    if (q := x * x) > 100:
-        print(f"{x}^2 = {q} ist größer als 100")
-    else:
-        print(f"{x}^2 = {q} ist nicht größer als 100")
+    """Vergleiche das Quadrat von x mit 100 und gib das Ergebnis aus."""
+    pass
 
 
 quadrat_und_vergleich(5)
@@ -73,9 +70,8 @@ quadrat_und_vergleich(11)
 
 
 def lese_zeilen(dateipfad):
-    with open(dateipfad, "r") as f:
-        while zeile := f.readline().strip():
-            print("Zeile:", zeile)
+    """Lese Zeilen aus einer Datei und gebe sie aus."""
+    pass
 
 
 # lese_zeilen("beispiel.txt")  # Datei nötig
@@ -85,8 +81,6 @@ def lese_zeilen(dateipfad):
 # Beispiel 6: Iterator-Zwischenspeicherung
 # ---------------------------------------------
 iterator = iter([1, 2, 3, 4, 5])
-while (wert := next(iterator, None)) is not None:
-    print(f"Nächstes Element: {wert}")
 
 
 # ---------------------------------------------
@@ -99,16 +93,3 @@ def negativ1():
 
 
 negativ1()
-
-# ---------------------------------------------
-# Negativbeispiel 2: unklarer Ausdruck in List Comprehension
-# ---------------------------------------------
-
-
-def negativ2():
-    zahlen = [1, 2, 3, 4, 5]
-    result = [(wurzel := x**0.5) for x in zahlen if wurzel > 1.5]  # FEHLER!
-    print(result)
-
-
-# negativ2()

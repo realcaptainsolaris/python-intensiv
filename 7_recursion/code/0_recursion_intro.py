@@ -16,29 +16,11 @@ zum Beispiel für:
 
 
 def print_nested_iterativ(data):
-    stack = [(data, 0)]  # Start mit äußerer Liste und Einrückung 0
-
-    while stack:
-        current, indent = stack.pop()
-
-        # Wir müssen die aktuelle Liste in umgekehrter Reihenfolge abarbeiten,
-        # damit beim Auspacken die ursprüngliche Reihenfolge stimmt.
-        for item in reversed(current):
-            if isinstance(item, list):
-                stack.append((item, indent + 2))
-            else:
-                # Nur wenn es ein Element ist, wird es sofort ausgegeben
-                # (also keine Liste, daher tiefste Ebene zuerst)
-                print(" " * indent + str(item))
+    pass
 
 
 def print_nested(data, indent=0):
-    # Beispiel 1: Durchlauf einer verschachtelten Liste
-    for item in data:
-        if isinstance(item, list):
-            print_nested(item, indent + 2)
-        else:
-            print(" " * indent + str(item))
+    pass
 
 
 nested = ["a", ["b", ["c", "d"], "e"], "f"]
@@ -49,14 +31,7 @@ print_nested_iterativ(nested)
 
 # Beispiel 2: Durchsuchen eines verschachtelten Wörterbuchs nach einem Schlüssel
 def find_key(d, target):
-    for key, value in d.items():
-        if key == target:
-            return value
-        elif isinstance(value, dict):
-            result = find_key(value, target)
-            if result is not None:
-                return result
-    return None
+    pass
 
 
 person = {
@@ -68,13 +43,3 @@ person = {
 }
 
 print("Email gefunden:", find_key(person, "email"))
-
-
-# Beispiel 3: Umwandlung einer Zahl in Binärdarstellung mit Rekursion
-def to_binary(n):
-    if n < 2:
-        return str(n)
-    return to_binary(n // 2) + str(n % 2)
-
-
-print("Binär von 13:", to_binary(13))  # 1101

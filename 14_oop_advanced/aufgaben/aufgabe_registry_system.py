@@ -43,7 +43,7 @@ class ConfigMeta(type):
 class BaseConfig(...):
     """BaseConfig muss Metaklasse ConfigMeta verwenden.  
 
-    Zudem müssen die Klassenmethoden all() und get() implementiert werden.
+    Zudem müssen die Methoden all() und get() implementiert werden.
 
     all(): liefert eine Liste aller registrierten Klassen zurück.
     get(classname): liefert die Klasse mit dem angegebenen Namen zurück.
