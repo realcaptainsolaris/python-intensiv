@@ -32,22 +32,3 @@ def greater_than_100(x) -> bool:
 
 # Liste mit Zahlen
 zahlen = [1, 111, 2, 222, 3, 333]
-
-# Filtere alle Zahlen > 100 mit filter()
-
-
-# Funktion, die prüft, ob ein Wort länger als 5 Buchstaben ist
-def check_length(s):
-    return len(s) > 5
-
-
-# Liste von Wörtern
-words = ["apple", "banana", "kiwi", "strawberry", "pear"]
-
-# Filtere Wörter mit mehr als 5 Zeichen mit filter()
-
-
-# Aufgabe: check_length als Lambda-Funktion umschreiben
-
-
-# Aufgabe: Gleiche Filterung mit List Comprehension umsetzen

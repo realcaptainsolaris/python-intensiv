@@ -17,25 +17,3 @@ werden kann.
 
 Dieses Skript zeigt den Unterschied anhand praktischer Beispiele.
 """
-
-# Eine Liste ist ein Iterable (aber kein Iterator)
-zahlen = [10, 20, 30]
-print(hasattr(zahlen, "__iter__"))  # True
-print(hasattr(zahlen, "__next__"))  # False
-
-
-# Erzeuge einen Iterator mit iter()
-iterator = iter(zahlen)
-print(hasattr(iterator, "__iter__"))  # True
-print(hasattr(iterator, "__next__"))  # True
-
-# Mit next() durchlaufen
-print(next(iterator))  # 10
-print(next(iterator))  # 20
-print(next(iterator))  # 30
-# print(next(iterator))  # StopIteration
-
-
-# Mit for-Schleife über Iterable (automatisch über Iterator im Hintergrund)
-for zahl in zahlen:
-    print(zahl)

@@ -38,35 +38,3 @@ Fibonacci-Baum rekursiv:
      |       |
      1       0
 """
-
-import sys
-from functools import lru_cache
-
-print("Maximale Rekursionstiefe:", sys.getrecursionlimit())
-
-
-# ---------------------------------------------
-# Beispiel 1: Naive Fibonacci (rekursiv, ineffizient)
-# siehe Baum
-# ---------------------------------------------
-def fib_naiv(n):
-    """Berechnet die n-te Fibonacci-Zahl rekursiv ohne Zwischenspeicherung.
-    Sehr ineffizient bei großen n wegen exponentieller Aufrufanzahl."""
-    pass
-
-
-# ---------------------------------------------
-# Beispiel 2: Fibonacci mit Memoisierung (Top-Down)
-# ---------------------------------------------
-def fib_memo(n):
-    """Rekursive Fibonacci mit Memoisierung über lru_cache.
-    Wiederverwendet bereits berechnete Werte."""
-    pass
-
-
-# ---------------------------------------------
-# Vergleich der verschiedenen Methoden
-# ---------------------------------------------
-n = 40
-print("Fibonacci naive:", fib_naiv(n))  # Sehr langsam ab n > 35
-print("Fibonacci memo:", fib_memo(n))

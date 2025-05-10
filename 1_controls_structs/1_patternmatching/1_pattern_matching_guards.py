@@ -26,14 +26,6 @@ harrypotter = ["Harry", "Hermione", "Ron"]
 hhgtg = ["Arthur", "Ford", "Zaphod", "Trillian"]
 name = input("Enter a name: ")
 
-match name:
-    case n if n in hhgtg:
-        print(f"{n} is a character in Hitchhiker's Guide to the Galaxy.")
-    case n if n in harrypotter:
-        print(f"{n} is a character in the Harry Potter stories.")
-    case _:
-        print(f"{name} is an unknown character.")
-
 
 # ---------------------------------------------
 # Beispiel 2: Zugriff auf GitHub-Repositories mit Guards
@@ -42,12 +34,6 @@ match name:
 response = requests.get("https://api.github.com/orgs/python/repos")
 repositories = response.json()
 
-# Nur Repositories mit mehr als 1000 Sternen werden ausgegeben
-for repo in repositories:
-    match repo:
-        case {"name": name, "stargazers_count": stars} if stars > 1000:
-            print(name)
-
 
 # ---------------------------------------------
 # Beispiel 3: Komplexe Listen-Muster mit Subpatterns und Guards
@@ -55,16 +41,6 @@ for repo in repositories:
 
 command = "pick arrow"  # Eingabe simulieren
 weapons = ["sword", "arrow", "knife"]
-
-match command.split():
-    case ["go", ("north" | "south" | "west" | "east") as direction]:
-        print("User is going", direction)
-    case ["pick", weapon] if weapon in weapons:
-        print("User is picking up", weapon)
-    case ["pick", _]:
-        print("This weapon does not exist!")
-    case _:
-        print("Unknown command")
 
 
 # ---------------------------------------------

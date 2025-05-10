@@ -15,20 +15,3 @@ Wichtige Funktionen und Konstanten:
 
 # Importiere das math-Modul für mathematische Berechnungen
 import math
-
-# Berechne die Quadratwurzel einer Zahl
-
-
-# Berechne eine Potenz mit math.pow
-
-# Berechne die Fakultät einer Zahl
-
-# Berechne den größten gemeinsamen Teiler (ggT)
-ggt = math.gcd(48, 18)
-print("Größter gemeinsamer Teiler von 48 und 18:", ggt)
-
-# Verwende die Konstante π (Pi)
-umfang = 2 * math.pi * 5  # Umfang eines Kreises mit Radius 5
-print("Umfang eines Kreises mit Radius 5:", umfang)
-
-# Berechne den Sinus von 90 Grad (in Radiant)

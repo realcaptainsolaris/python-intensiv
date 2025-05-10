@@ -22,12 +22,3 @@ funktion = decorator_name(funktion)
 
 Dieses Skript zeigt den grundlegenden Aufbau eines einfachen Decorators.
 """
-
-
-# Einfacher Decorator, der Text vor und nach der Funktion ausgibt
-
-
-# Decorator, der das Ergebnis einer Funktion verdoppelt
-
-
-# Decorator mit Übergabe einer Funktion mit Argumenten

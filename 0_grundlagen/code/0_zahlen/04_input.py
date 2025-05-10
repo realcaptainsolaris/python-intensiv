@@ -11,13 +11,3 @@ Themenübersicht:
 3. Konvertierung von Eingaben in andere Datentypen
 4. Validierung und Umgang mit ungültigen Eingaben
 """
-
-# 1. Grundlagen der Funktion `input`
-# Mit `input` können Daten vom Benutzer eingelesen werden.
-
-# 2. Verwendung eines Prompts für Eingaben
-# Ein Prompt informiert den Benutzer, welche Eingabe erwartet wird.
-
-# 3. Konvertierung von Eingaben in andere Datentypen
-# Eingaben können von String zu anderen Datentypen konvertiert werden.
-# Beispiel: Umwandlung in einen Integer

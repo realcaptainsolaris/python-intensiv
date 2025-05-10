@@ -16,13 +16,3 @@ import statistics
 
 # Beispiel-Datensatz
 daten = [10, 20, 20, 30, 40, 40, 40, 50, 60]
-
-# Berechne das arithmetische Mittel
-
-# Berechne den Median (Zentralwert)
-
-# Bestimme den Modus (häufigster Wert)
-
-# Berechne die Standardabweichung
-
-# Berechne die Varianz

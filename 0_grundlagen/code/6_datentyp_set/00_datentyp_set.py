@@ -13,25 +13,6 @@ Themenübersicht:
 4. Methoden und Anwendungen
 """
 
-# 1. Erstellung und Eigenschaften von Sets
-# Ein Set wird mit geschweiften Klammern `{}` oder der Funktion `set()` erstellt.
-# Sets enthalten keine doppelten Elemente.
-
-# Erstellung eines leeren Sets (Achtung: {} erzeugt ein leeres Dictionary)
-
-# Automatische Entfernung doppelter Elemente
-
-# 2. Hinzufügen und Entfernen von Elementen
-# `add()`: Fügt ein Element hinzu.
-
-# `remove()`: Entfernt ein Element (KeyError, wenn das Element nicht existiert).
-
-# `discard()`: Entfernt ein Element (kein Fehler, wenn das Element nicht existiert).
-
-# `pop()`: Entfernt ein zufälliges Element.
-
-# `clear()`: Entfernt alle Elemente aus dem Set.
-
 # 3. Mengenoperationen
 set_a = {1, 2, 3, 4}
 set_b = {3, 4, 5, 6}

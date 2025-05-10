@@ -21,19 +21,3 @@ funktionalen Programmiertechniken verwendet.
 Real-World-Beispiel: Ein Rabatt-Generator, der je nach eingegebenem
 Rabattprozentsatz eine angepasste Preisfunktion erzeugt.
 """
-
-
-# Beispiel 1: Einfache Closure zur Erzeugung einer Multiplikationsfunktion
-
-# Beispiel 2: Closure zur Rabattberechnung
-
-
-# Aufgabe: Erzeuge mit einem Closure eine Funktion, die zu einem
-# beliebigen Text einen bestimmten Suffix anhängt
-
-# Funktionsweise
-# add_html = suffix_anhänger(".html")
-# print(add_html("index"))  # index.html
-
-# add_ausrufezeichen = suffix_anhänger("!!!")
-# print(add_ausrufezeichen("Wow"))  # Wow!!!

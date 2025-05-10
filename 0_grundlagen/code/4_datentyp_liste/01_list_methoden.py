@@ -16,25 +16,6 @@ Themenübersicht:
 # 1. Hinzufügen von Elementen
 fruits = ["apple", "banana", "cherry"]
 
-# `append()`: Fügt ein Element am Ende der Liste hinzu
-
-# `extend()`: Fügt mehrere Elemente am Ende hinzu
-
-# `insert()`: Fügt ein Element an einer bestimmten Position ein
-
-# 2. Entfernen von Elementen
-# `remove()`: Entfernt das erste Vorkommen eines Elements
-
-# `pop()`: Entfernt ein Element an einer bestimmten Position (Standard: letztes Element)
-
-# `clear()`: Entfernt alle Elemente aus der Liste
-
-# 3. Suchen und Zählen
-fruits = ["apple", "banana", "apple", "cherry"]
-
-# `index()`: Gibt den Index des ersten Vorkommens eines Elements zurück
-
-# `count()`: Zählt die Anzahl eines bestimmten Elements
 
 # 4. Sortieren und Umkehren
 numbers = [5, 2, 9, 1, 5, 6]

@@ -7,13 +7,13 @@ Das Board ist zudem unterteilt in ein 4 x 4 Raster mit jeweils  Seitenlänge 50p
 
           0   1    2    3
     - -|----|----|----|----|-
-     0 |    |    |    |    | 
+     0 |    |    |    |    |
     - -|----|----|----|----|-
- Y   1 |    | S  |    |    | 
+ Y   1 |    | S  |    |    |
     - -|----|----|----|----|-
-     2 |    |    |    |    | 
+     2 |    |    |    |    |
     - -|----|----|----|----|-
-     3 |    |    |    |    | 
+     3 |    |    |    |    |
     - -|----|----|----|----|-
 
     <- X ->
@@ -32,7 +32,7 @@ ground = [
 ]
 
 1) In welchem Raster befindet sich die Spielfigur,
-wenn die X- und Y- Koordinate gegeben ist (y Zählung zählt nach unten)
+wenn die X- und Y- Koordinate gegeben ist (y Zählung vertikal, zählt nach unten)
 Beispiele:
 x: 0, y: 0 => Rasterfeld 0/0
 
@@ -42,7 +42,7 @@ x: 52, y: 50 => Rasterfeld 1/1
 
 x: 48, y: 190 => Rasterfeld 0/3
 
-x: 200, y: 90 => Rasterfeld: out of gameboard
+x: 200, y: 90 => Rasterfeld: out of gameboard (x Wert > 200)
 
 2) Gebe zusätzlich die aktuelle Bodenart aus.
 
@@ -52,3 +52,6 @@ an und printe das Ergebnis mit Hilfe des f-Strings.
 Die x- und y Koordinaten sollen durch Userinput gewonnen werden.
 Wir erwarten nur legale x-y-Werte (positiv, nach Integer castbar)
 """
+
+x = input("x Koordianate:")
+y = input("y Koordianate:")

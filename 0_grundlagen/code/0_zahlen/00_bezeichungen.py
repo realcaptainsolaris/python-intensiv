@@ -27,16 +27,3 @@ Benennung von Variablen und Dateinamen.
 
 https://peps.python.org/pep-0008/
 """
-
-# Beispiel für Variablennamen
-# Hier werden Variablen mit sinnvollen und konsistenten Namen erstellt
-
-# Berechnung des Geburtsjahres anhand des Alters
-# Variablenname beschreibt den Zweck der Berechnung
-
-# Beispiel für schlechte Variablennamen
-# Vermeiden Sie Namen wie diese:
-
-# Beispiel für Dateinamen
-# Gute Beispiele: my_script.py, calculate_savings.py, data_analysis.py
-# Schlechte Beispiele: script1.py, temp.py, 123.py

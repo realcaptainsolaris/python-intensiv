@@ -18,18 +18,3 @@ Nachteile:
 Dieses Skript enthält eine rekursive Funktion zur Binärsuche und ein
 Beispiel zur Anwendung.
 """
-
-
-def binary_search_recursive(arr, target, left=0, right=None):
-    pass
-
-
-# Beispiel
-zahlen = [1, 3, 5, 7, 9, 11, 13, 15, 17]
-ziel = 7
-index = binary_search_recursive(zahlen, ziel)
-
-if index != -1:
-    print(f"Zahl {ziel} gefunden an Index {index}.")
-else:
-    print(f"Zahl {ziel} nicht gefunden.")

@@ -23,15 +23,6 @@ data = {
 # 2. Schreiben von JSON-Daten in eine Datei
 file_path = Path(__file__).parent / "data.json"
 
-# JSON-Daten in eine Datei schreiben
-#
-#
-# 3. Lesen von JSON-Daten aus einer Datei
-# JSON-Daten aus einer Datei lesen
 
-# 4. Verarbeitung von JSON-Daten
-# Zugriff auf JSON-Daten
-
-# 6. Umgang mit Fehlern beim JSON-Parsen
 # Ungültiges JSON (zusätzliches Komma)
 invalid_json = '{"name": "Anna", "age": 30, }'

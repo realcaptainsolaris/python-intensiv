@@ -81,15 +81,3 @@ def lese_zeilen(dateipfad):
 # Beispiel 6: Iterator-Zwischenspeicherung
 # ---------------------------------------------
 iterator = iter([1, 2, 3, 4, 5])
-
-
-# ---------------------------------------------
-# Negativbeispiel 1: unnötig verschachtelt
-# ---------------------------------------------
-# Schlechter Stil: reduziert Lesbarkeit deutlich
-def negativ1():
-    if (x := len((temp := input("Wert: ")))) > 3:
-        print(f"'{temp}' ist zu lang mit Länge {x}")
-
-
-negativ1()

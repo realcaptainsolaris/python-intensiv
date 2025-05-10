@@ -20,26 +20,3 @@ zum Beispiel zur Wertevalidierung und Zugriffskontrolle.
 # @validate_range(1, 10)
 def quadrat(x):
     return x * x
-
-
-# print(quadrat(3))  # gültig
-# print(quadrat(20))  # ValueError
-
-
-# Beispiel 2: Zugriffskontrolle basierend auf Rollen
-
-# admin_user = {"name": "Anna", "rolle": "admin"}
-# print(starte_server(admin_user))  # Server gestartet!
-
-# normal_user = {"name": "Ben", "rolle": "user"}
-# print(starte_server(normal_user))  # PermissionError
-
-
-# Beispiel 3: Real-World: Decorator für Texteingaben mit Mindestlänge
-# @min_textlaenge(5)
-def speichere_kommentar(text):
-    return f"Kommentar gespeichert: {text}"
-
-
-# print(speichere_kommentar("Sehr gut!"))
-# print(speichere_kommentar("Hi"))  # ValueError
