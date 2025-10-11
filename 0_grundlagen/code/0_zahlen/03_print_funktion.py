@@ -5,9 +5,4 @@ Die print-Funktion in Python bietet vielseitige Möglichkeiten, Ausgaben
 im Terminal oder in der Konsole zu formatieren. Neben den Standard-
 einstellungen für die Ausgabe können zusätzliche Parameter wie `sep` und
 `end` verwendet werden, um die Ausgabe zu steuern.
-
-Themenübersicht:
-1. Mehrere Argumente
-2. Der Parameter `sep`
-3. Der Parameter `end`
 """

@@ -1,8 +1,5 @@
 """(MITTEL)
-Schreibe folgenden Code in einen ternären operator um
-
-zur Erinnerung:
-    1 if x else 2
+Schreibe folgenden Code in Form eines ternären operators um
 
 if x > 2 and p <= 33:
     z = 0

@@ -6,11 +6,6 @@ häufig verwendete Ansätze sind f-Strings (seit Python 3.6) und die Methode
 `format()`. Beide erlauben das Einfügen von Werten in Strings und das
 Anpassen des Ausgabeformats.
 
-Themenübersicht:
-1. Grundlagen von f-Strings
-2. Platzhalter und Formatierung mit `format()`
-3. Darstellung von Zahlensystemen
-4. Darstellung großer Zahlen mit Tausendertrenner
 """
 
 name = "Alice"

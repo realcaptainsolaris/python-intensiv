@@ -99,6 +99,19 @@ if match:
     print("Jahr:", match.group(3))
 ```
 
+```python
+pattern = r"(?P<tag>\d{2})-(?P<monat>\d{2})-(?P<jahr>\d{4})"
+string = "Heute ist der 25-01-2024."
+
+match = re.search(pattern, string)
+if match:
+    print("Tag:", match.group("tag"))
+    print("Monat:", match.group("monat"))
+    print("Jahr:", match.group("jahr"))
+    # oder als Dictionary:
+    print(match.groupdict())
+```
+
 ## Flags
 
 Flags ändern das Verhalten des regulären Ausdrucks. Zum Beispiel macht das Flag `re.IGNORECASE` die Suche unempfindlich gegenüber Groß- und Kleinschreibung.

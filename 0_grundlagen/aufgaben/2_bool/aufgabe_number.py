@@ -14,4 +14,4 @@ random_number = random.randint(1, 8)
 # b) 3-5
 # c) 1-2
 
-# Beispiel-Lösung: die gewürfelte Zahl ist im Wertebereich a zuhause
+# Beispiel-Lösung: die gewürfelte Zahl 7 st im Wertebereich a zuhause

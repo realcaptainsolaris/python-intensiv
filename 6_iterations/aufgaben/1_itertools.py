@@ -1,5 +1,5 @@
 """
-Aufgabe Summen pro Kategorie mit itertools
+Aufgabe Summen pro Kategorie (Lösen mit itertools)
 
 CSV‑Datei expenses.csv:
 
@@ -19,7 +19,7 @@ Schreibe die Funktion totals(path: str) → dict[str, float], die
 Hinweis‑Snippet für Schritt 3:
 
     import itertools
-    rows = sorted(rows, key=lambda r: r["category"].lower())
+    rows = sorted(rows, ???) # nach category sortieren (case‑insensitiv)
     result = {cat: sum(float(r["amount"]) for r in grp)
               for cat, grp in itertools.groupby(
                       rows, key=lambda r: r["category"].lower())}

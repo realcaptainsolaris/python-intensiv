@@ -7,5 +7,6 @@ Sample Output:
 Longest word: Exercises
 Length of the longest word: 9
 """
-words_list = ["Exercises", "Exercise9", "kanal", "pp", "Exercis"]
+
+words_list = ["Exercises", "Exercise", "kanal", "pp", "Exercis"]
 index = 0

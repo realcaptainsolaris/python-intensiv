@@ -83,7 +83,7 @@
 ## Strings
 - String Methoden
 - Reguläre Ausdrücke
-- Encoding, Zeichensätze, Unicode, UtF-8
+- Encoding, Unicode, UtF-8
 
 ## OS
 - Threading

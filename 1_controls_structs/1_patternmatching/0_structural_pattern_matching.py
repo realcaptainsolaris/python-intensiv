@@ -10,23 +10,6 @@ match expression:
     case pattern2: # do something else
 """
 
-# Oldschool: Bedingte Verarbeitung mit if/elif/else
-weekday = 1
-if weekday == 1:
-    weekday_name = "Monday"
-elif weekday == 2:
-    weekday_name = "Tuesday"
-else:
-    weekday_name = "undefined"
-
-print(weekday_name)
-
-# Pattern Matching: Vereinfachung durch match/case
-
-# Pattern Matching mit Listen
-name = "Captain Jean Luc"
-
-
 # Pattern Matching mit benutzerdefinierten Zeichenfolgen
 input_string = "+ 3 3"
 

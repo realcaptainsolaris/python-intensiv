@@ -1,5 +1,4 @@
 """
-
 Parse list
 
 1. Schreibe eine Funktion list_parse(), die eine Liste von Strings
@@ -45,6 +44,7 @@ cleaned = [2.0, 0.2, 0.4, 3.0]
 errors = ['a3', 'a01', ',', 'a.a', 'a,']
 
 """
+
 a = ["2", "a3", "0.2", "0,4", "a01", "3", ",", "a.a", "a,"]
 
 

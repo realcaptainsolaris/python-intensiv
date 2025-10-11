@@ -30,3 +30,6 @@ def save_cities_to_file():
 def main():
     load_cities()
     ...
+
+
+main()

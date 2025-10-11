@@ -9,7 +9,7 @@ Der letzte Chunk darf kürzer sein, wenn die Elemente nicht aufgehen.
     ['abc', 'def', 'g']
 
 Regeln:
-    • Keine Listen in voller Länge anlegen – iteriere einmalig.
-    • size > 0 voraussetzen, sonst ValueError werfen.
-    • Nur Standard‑Bibliothek, kein itertools.chunked verwenden.
+Keine Listen in voller Länge anlegen – iteriere einmalig.
+size > 0 voraussetzen, sonst ValueError werfen.
+Nur Standard‑Bibliothek, kein itertools.chunked verwenden.
 """

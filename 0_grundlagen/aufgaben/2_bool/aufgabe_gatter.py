@@ -19,6 +19,7 @@ if A and B:
 Implementiere das XOR-Gatter
 # XOR Gatter: XOR ist wahr, wenn exklusiv A oder B wahr ist
 https://de.wikipedia.org/wiki/Exklusiv-Oder-Gatter
+nicht den xor-operator (^) verwenden
 
 #
 A   B   A XOR B

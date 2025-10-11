@@ -72,9 +72,6 @@ t2.join()
 ## Zusammenfassung
 Threads in Python ermöglichen parallele Ausführungen innerhalb eines Prozesses, was die Leistung von I/O-bound oder netzwerkintensiven Anwendungen verbessern kann. Das `threading`-Modul bietet eine flexible und einfache Schnittstelle zur Verwaltung von Threads, einschließlich Synchronisierungsmechanismen, um Race Conditions zu vermeiden.
 
-Gerne! Nachdem wir Threads in Python behandelt haben, ist der nächste Schritt, den ThreadPoolExecutor aus dem `concurrent.futures`-Modul zu betrachten. Der ThreadPoolExecutor ist eine High-Level-Schnittstelle für die asynchrone Ausführung von Aufrufen mit einem Pool von Threads, was die Verwaltung von mehreren Threads erheblich vereinfacht und optimiert.
-
----
 
 # ThreadPoolExecutor
 

@@ -10,6 +10,7 @@ zb. für Banane den Index 0
 1 Apfel
 2 Kirsche
 """
+
 fruits = ["Banane", "Apfel", "Kirsche"]
 
 # 2. Filtern einer Liste 1 (leicht)
@@ -71,7 +72,7 @@ result = [xx, alphabeta]
 a = ["x_x", "alpha_beta", "_"]
 
 
-# 8. Bereiningen der Liste von Steuerzeichen und x (schwer) 
+# 8. Bereiningen der Liste von Steuerzeichen und x (schwer)
 """
 Gegeben ist eine Liste a mit String-Elementen. Bereinige diese Elemente von Whitespace und Steuerzeichen. Entferne alle x aus den Strings.
 

@@ -1,7 +1,5 @@
 # Daemon-Threads in Python
 
-In diesem Tutorial lernst du, was Daemon-Threads in Python sind, wie sie sich von normalen Threads unterscheiden, wie man sie einsetzt und welche Besonderheiten zu beachten sind.
-
 ## Was ist ein Daemon-Thread in Python?
 
 Ein **Daemon-Thread** ist ein Hintergrund-Thread, der das Beenden des Python-Programms nicht verhindert. Im Gegensatz dazu sind normale (Nicht-Daemon-)Threads **Foreground-Threads**, die das Programm am Laufen halten, bis sie beendet sind. Der entscheidende Punkt ist: *Das gesamte Python-Programm beendet sich, sobald nur noch Daemon-Threads aktiv sind.* Normale Threads hingegen sorgen dafür, dass das Programm so lange weiterläuft, bis auch sie abgeschlossen sind.
