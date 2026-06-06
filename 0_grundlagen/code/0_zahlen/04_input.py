@@ -6,4 +6,6 @@ verarbeiten. Die Eingabe wird standardmäßig als String zurückgegeben, kann
 aber in andere Datentypen umgewandelt werden, um damit zu arbeiten.
 
 ui = input("Das ist ein Prompt: ")
+type(ui)  # Ergebnis: <class 'str'>
+gewicht = float(input("Bitte Gewicht in Kilogramm eingeben: "))
 """

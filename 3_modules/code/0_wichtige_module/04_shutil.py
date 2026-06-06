@@ -1,13 +1,13 @@
 """
-Das Thema dieser Datei ist das `shutil`-Modul in Python.
+Das `shutil`-Modul in Python.
 
 - Das `shutil`-Modul bietet Funktionen zum Kopieren, Verschieben und Löschen
   von Dateien und Verzeichnissen sowie zum Arbeiten mit Archiven.
 - Es wird häufig für Aufgaben im Zusammenhang mit der Dateiverwaltung verwendet.
 """
 
-import shutil
 from pathlib import Path
+import shutil
 
 # --- Datei kopieren ---
 source_file = Path(__file__).parent / "source.txt"

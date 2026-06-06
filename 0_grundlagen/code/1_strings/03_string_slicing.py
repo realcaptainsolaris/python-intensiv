@@ -1,8 +1,10 @@
 """
-String Slicing in Python
+Slicing von Sequencen in Python
 
-String Slicing erlaubt es, Teilstrings (Substrings) aus einem String zu
-extrahieren.
+Slicing erlaubt es, Teilstrings (Substrings) aus einem String zu
+extrahieren. Das Prinzip lässt sich auf alle Sequenztypen in Python anwenden,
+einschließlich Listen.
+
 Mit Hilfe von Start-, End- und Schrittwerten kann flexibel auf bestimmte
 Abschnitte eines Strings zugegriffen werden.
 
@@ -20,16 +22,14 @@ a[start:stop:schrittweite]  # beginnt bei Start und endet bei Stop - 1 in Schrit
 
 # # Übung
 # # Schneide jeweils alle A aus den Strings
-# AAAAB => AAAA
 # BBAAABBB => AAA
 # AAAABBBB => AAAA
 # ABBBBB => A
 string = "AAAAB"
+print(string[0:4])
 
 string = "BBAAABBB"
 
 string = "AAAABBBB"
-
-string = "BBAABBBB"
 
 string = "ABBBBB"

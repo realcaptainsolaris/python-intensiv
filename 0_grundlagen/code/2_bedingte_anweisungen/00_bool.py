@@ -4,14 +4,6 @@ Datentyp `bool` in Python
 Der Datentyp `bool` repräsentiert in Python die zwei Wahrheitswerte `True`
 und `False`. Er wird häufig in Kontrollstrukturen, Vergleichen und logischen
 Operationen verwendet.
-
-Themenübersicht:
-1. Grundlagen des Datentyps `bool`
-2. Erzeugung von Booleschen Werten
-3. Vergleichsoperatoren
-4. Logische Operationen
-5. Konvertierung in und von `bool`
-6. Falsy-Werte in Python
 """
 
 # Beispiele für falsy-Werte:

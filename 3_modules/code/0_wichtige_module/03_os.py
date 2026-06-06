@@ -1,5 +1,5 @@
 """
-Das Thema dieser Datei ist das `os`-Modul in Python.
+Das `os`-Modul in Python.
 
 - Das `os`-Modul bietet Funktionen zur Interaktion mit dem Betriebssystem.
 - Es ermöglicht Dateiverwaltung, Prozesssteuerung und Zugriff auf Systeminformationen.

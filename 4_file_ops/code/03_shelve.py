@@ -1,34 +1,39 @@
 """
 Das Thema dieser Datei ist die Verwendung des `shelve`-Moduls in Python.
 
-- `shelve` ist ein Modul der Python-Standardbibliothek, das einfache
-  persistente Speicherlösungen bietet.
-- Es ermöglicht das Speichern von Python-Objekten in einer Datei
-  mithilfe eines Dictionary-ähnlichen Interfaces.
-- Die gespeicherten Daten werden automatisch serialisiert.
-- Keys dürfen nur Strings sein, während die Werte beliebige Python-Objekte
-  sein können.
+- `shelve` ist ein Modul der Python-Standardbibliothek für einfache
+  persistente Datenspeicherung.
+- Es bietet ein Dictionary-ähnliches Interface.
+- Python-Objekte werden automatisch mittels `pickle`
+  serialisiert und deserialisiert.
+- Schlüssel müssen Strings sein.
+- Werte können beliebige serialisierbare Python-Objekte sein.
 
-Die gespeicherten Daten werden intern von einem Datenbankmodul (wie dbm)
-verwaltet. Dadurch entstehen beim Speichern mehrere Dateien
+Intern verwendet `shelve` ein DBM-Backend (`dbm`), dessen konkrete
+Implementierung vom Betriebssystem und der Python-Installation abhängt.
+Typische Backends sind `dbm.gnu`, `dbm.ndbm` oder `dbm.dumb`.
 
-Die Daten liegen nach Speicherung in drei Dateien vor:
-- basename.db: Enthält die Daten.
-- basename.dat: Enthält die serialisierten Daten.
-- basename.bak: Enthält eine Sicherungskopie der Datenbank.
-- basename.dir: Enthält die Indexdatei.
+Die erzeugten Dateien unterscheiden sich daher je nach System.
+Mögliche Dateien sind beispielsweise:
 
-Je nach Betriebssystem und DBM-Backend können auch weniger oder andere Dateien
-entstehen. Beispielsweise erzeugt dbm.dumb nur .dat und .dir.
+- basename.db
+- basename.dat
+- basename.dir
+- basename.bak
 
-Aufgrund dieser Tatsache ist shelve nicht platformunabhängig und sollte
-nur genutzt werden, wenn die Datenbankdateien auf dem gleichen System
-genutzt werden.
+Es kann jedoch auch nur eine einzelne Datei oder eine andere
+Dateistruktur entstehen.
+
+Da die verwendeten Datenbankformate systemabhängig sind, sollten
+Shelve-Dateien nicht als plattformübergreifendes Austauschformat
+verwendet werden.
 
 Alternativen zu `shelve` sind:
-- pickle: Einfaches Modul zum Serialisieren von Python-Objekten.
-- json: Modul zum Serialisieren von Python-Objekten in JSON-Dateien.
+
+- `pickle` für die reine Objektserialisierung.
+- `json` für plattformunabhängige Textdateien.
+- `sqlite3` für eine echte relationale Datenbank.
 """
 
-import shelve
 from pathlib import Path
+import shelve

@@ -1,0 +1,8 @@
+# CSV-Datei mit den Filmdaten
+movie_file = "movies.csv"
+
+# Wie viele Top-Filme standardmäßig angezeigt werden sollen
+top_movies_limit = 10
+
+# JSON-Datei für den Export
+json_export_file = "movies.json"

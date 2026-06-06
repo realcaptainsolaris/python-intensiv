@@ -5,7 +5,7 @@ Dictionaries sind eine flexible Datenstruktur in Python und bieten eine Vielzahl
 von Methoden, um Schlüssel-Wert-Paare hinzuzufügen, zu entfernen, zu durchsuchen
 und zu manipulieren.
 
-Themenübersicht:
+Wichtige Methoden umfassen:
 1. Zugriffsmethoden: `get()`,
 2. Aktualisierung und Zusammenführung: `update()`
 3. Entfernen von Einträgen: `pop()`, `popitem()`, `clear()`

@@ -8,8 +8,6 @@ Wichtige Funktionen:
 - random.randint(a, b): Ganzzahl zwischen a und b (inklusive)
 - random.choice(seq): Zufälliges Element aus einer Sequenz
 - random.shuffle(seq): Durchmischt eine Sequenz in-place
-- random.uniform(a, b): Fließkommazahl zwischen a und b
-- random.gauss(mu, sigma): Zufallswert nach der Gaußschen Verteilung
 - random.choices(seq, k=n): Ziehe n Elemente mit Zurücklegen
 - random.sample(seq, k): Ziehe k eindeutige Elemente ohne Zurücklegen
 """
