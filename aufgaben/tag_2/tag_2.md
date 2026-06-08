@@ -25,6 +25,8 @@ Heute werden insbesondere folgende Themen angewendet:
 
 ## Ausgangssituation
 
+
+
 Gegeben ist eine CSV-Datei im selben Verzeichnis wie das Python-Programm.
 
 Beispiel:
@@ -56,6 +58,20 @@ movie_catalog/
 Importiere die Funktionen anschließend in `main.py` und verwende sie dort.
 `main.py` ist das Einstiesgsskript, das alle Funktionen aufruft.
 
+In main.py liegt auf die Funktion `print_movies`
+
+
+```python
+def print_movies(movies: list[dict]) -> None:
+    """
+    Gibt alle Filme formatiert auf der Konsole aus.
+    """
+    for movie in movies:
+        print(
+            f"{movie['title']} ({movie['year']}) - {movie['genre']} - {movie['rating']}"
+        )
+```
+
 ---
 
 ## Aufgabe: CSV-Dateien laden
@@ -77,7 +93,7 @@ In Modul `movie_loader.py`:
 
 Lade alle Filme aus einer CSV-Datei.
 Verwende zum Öffnen der Datei `pathlib.Path`.
-Nutze zur Ausgabe der Filme die Funktion `print_movies` aus der vorherigen Übung (Ablegen in `main.py`).
+Nutze zur Ausgabe der Filme die Funktion `print_movies` (Ablegen in `main.py`).
 
 ### Beispielaufruf in `main.py`
 
@@ -87,7 +103,7 @@ from pathlib import Path
 from movie_loader import load_movies_from_csv
 
 movies = load_movies_from_csv(
-    Path(__file__).parent / "movies.csv",
+  ...
 )
 print_movies(movies)
 
@@ -121,8 +137,7 @@ Speichere alle Filme in einer JSON-Datei.
 from pathlib import Path
 
 save_movies_to_json(
-    movies,
-    Path(__file__).parent / "movies.json",
+  ..., ...
 )
 ```
 
@@ -155,7 +170,7 @@ Vergleiche anschließend die Vor- und Nachteile von CSV und JSON.
 from pathlib import Path
 
 movies = load_movies_from_json(
-    Path(__file__).parent / "movies.json",
+  ...
 )
 ```
 
@@ -193,12 +208,11 @@ top_movies_limit = 10
 from pathlib import Path
 
 config = load_config(
-    Path(__file__).parent / "config.toml",
 )
 ```
 
 ---
-## Bonus Aufgabe Funktion Sortieren (Ninja Level)
+## Bonus Aufgabe Funktion Sortieren
 
 Implementiere eine allgemeine Sortierfunktion im Modul `movie_queries.py`.
 Die Sortierung soll über eine übergebene Funktion gesteuert werden.
